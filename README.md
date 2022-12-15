@@ -28,6 +28,17 @@ check the respective output for logs.
 which is ready to be served out by the express static server. When working locally, all requests from the react app to
 port 3000 will be proxied to localhost:5000 (see `package.json`)
 
+### Getting to Work
+  - [ ] Get the project running (server and client)
+  - [ ] Review the routes on the backend, confirming you can read / create / update / delete tasks via postman
+  - [ ] Review the frontend: `api.js`, `TaskTable`, `TaskForm`, and `TaskTableRow`
+  - [ ] TaskTable: Grab the tasks using the provided functions in `api.js` and store in local state in `TaskTable` (console log or use `JSON.stringify` to verify)
+  - [ ] TaskForm: Create a `TaskForm` component which tracks user input with local state and calls the `createTask` function in `api.js` and refreshes the global tasks data by calling the appropriate function that should be passed in via props from `TaskTable`.
+  - [ ] TaskTable: Map over the tasks in `TaskTable`, passing each task to a `TaskTableRow` child component as a prop
+  - [ ] TaskTableRow: Add the ability to delete a task by using the function call in `api.js`
+  - [ ] TaskTableRow: Add the ability to update a task by using the function call in `api.js`
+  - [ ] TaskTable: Add a message that uses `.filter` to show how many tasks are complete/incomplete
+
 ### Task API
 
 The completed and fully working project is available on the `solution` branch. The `main` branch has
