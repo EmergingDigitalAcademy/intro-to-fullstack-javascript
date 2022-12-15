@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import { Table } from "reactstrap";
-import TaskTableRow from "./TaskTableRow";
 
 const TaskTable = () => {
   const [tasks, setTasks] = useState([]);
@@ -16,7 +15,7 @@ const TaskTable = () => {
         There are <span className="text-success">{tasks.length}</span> total
         tasks, including{" "}
         <span className="text-danger">
-          {/* TODO: Display how many tasks are incomplete */}
+          {/* TODO: Display the number of tasks that are incomplete */}
         </span>{" "}
         that are incomplete.
       </p>
