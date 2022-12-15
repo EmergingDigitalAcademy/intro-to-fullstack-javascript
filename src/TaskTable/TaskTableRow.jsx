@@ -14,7 +14,7 @@ const TaskTableRow = (props) => {
     <>
       <tr
         key={`task-${task.id}`}
-        className={task.done ? "bg-success text-white" : ""}
+        className={task.done && "bg-success text-white"}
       >
         <td className="align-middle text-center">
           <Button
@@ -26,7 +26,6 @@ const TaskTableRow = (props) => {
             }}
           >
             {/* TODO: Conditionally Render a complete or empty checkbox based on the state of task.done  */}
-            {task.done ? checkboxCompleteIcon : checkboxEmptyIcon}
           </Button>
         </td>
         <td className="align-middle">{task.description}</td>
